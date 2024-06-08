@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="mr-2">
             <UploadBtn />
           </div>
-          <a href="https://github.com/noxxxd01" target="_blank">
+          <a href="https://github.com/noxxxd01/imgrepo.git" target="_blank">
             <Button variant="ghost" size="icon">
               <GithubIcon size={20} />
             </Button>
