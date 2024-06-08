@@ -5,7 +5,10 @@ import { defineConfig } from "vite"
 export default defineConfig({
   plugins: [react()],
   server: {
-    open: true
+    open: true,
+    host: true,
+    strictPort: true,
+    port: 4000
   },
   resolve: {
     alias: {
