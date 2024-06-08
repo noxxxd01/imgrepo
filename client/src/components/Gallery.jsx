@@ -9,13 +9,13 @@ const Gallery = () => {
     const [images, setImages] = useState([]);
 
     const fetchImages = async () => {
-        const response = await axios.get('http://localhost:4000/api');
+        const response = await axios.get('https://imgrepo.onrender.com/api');
         setImages(response.data);
     };
 
     const deleteImage = async (id) => {
         try {
-            await axios.delete(`http://localhost:4000/api/${id}`)
+            await axios.delete(`https://imgrepo.onrender.com/api/${id}`)
             fetchImages();
         } catch (error) {
             console.error('Error deleting image: ', error)

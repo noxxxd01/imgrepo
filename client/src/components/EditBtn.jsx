@@ -38,7 +38,7 @@ const EditBtn = ({ imageId }) => {
     }
 
     try {
-      const res = await axios.put(`http://localhost:4000/api/${imageId}`, { name })
+      const res = await axios.put(`https://imgrepo.onrender.com/api/${imageId}`, { name })
       setMessage('Image updated successfully')
       console.log(res.data);
 
